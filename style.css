@@ -5,7 +5,6 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex; /* Use flexbox for layout */
 }
 
 /* Header Section */
@@ -33,14 +32,9 @@ nav {
     background-color: #1f1f1f; /* Dark background for navigation */
     padding: 15px;
     display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    justify-content: center; /* Center items vertically */
-    position: fixed; /* Keep it fixed on the right */
-    top: 50%; /* Center vertically */
-    right: 0; /* Position it on the right */
-    transform: translateY(-50%); /* Adjust for vertical centering */
-    height: 60%; /* Set height for navigation */
-    width: 200px; /* Set width for navigation */
+    justify-content: center; /* Center nav items horizontally */
+    position: relative; /* Position relative to allow child positioning */
+    height: 60px; /* Set height for nav */
 }
 
 /* Navigation Items */
@@ -48,10 +42,11 @@ nav ul {
     list-style: none; /* No bullets */
     padding: 0; /* Remove default padding */
     margin: 0; /* Remove default margin */
+    display: flex; /* Display links in a row */
 }
 
 nav ul li {
-    margin-bottom: 20px; /* Space between nav items */
+    margin-right: 20px; /* Space between nav items */
 }
 
 nav ul li a {
@@ -66,7 +61,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    margin-left: 220px; /* Space for navigation */
+    margin-left: 20px; /* Adjust margin for the hero section */
     padding: 150px 20px; /* Add padding */
     text-align: center;
 }
@@ -96,6 +91,9 @@ nav ul li a:hover {
     background-color: #00BFFF; /* Lighter blue for hover */
     transform: scale(1.05);
 }
+
+/* Other sections remain the same... */
+
 /* About Section */
 .about, .projects {
     padding: 50px;
