@@ -53,55 +53,35 @@ nav ul li a:hover {
     color: #A8C3C0; /* Silver blue for hover */
 }
 
-/* Hero Section */
-.hero {
-    padding: 100px 20px; /* Padding for the hero section */
-    text-align: center;
-    opacity: 0; /* Initial opacity for fade-in effect */
-    animation: fadeIn 1s ease-in-out forwards;
+/* Main Section */
+main {
+    padding: 50px 20px; /* Padding for the main content */
 }
 
-.hero h1 {
-    color: #1E90FF; /* Silver blue for hero heading */
-    font-size: 56px; /* Hero heading font size */
-    margin-bottom: 20px;
-    opacity: 0; /* Initial opacity */
-    animation: fadeInUp 1.5s ease-in-out forwards; /* Animation */
+/* Intro Section */
+.intro {
+    text-align: center; /* Center text */
+    margin-bottom: 50px; /* Space below intro */
 }
 
-.hero p {
-    font-size: 24px; /* Hero paragraph font size */
-    opacity: 0; /* Initial opacity */
-    animation: fadeInUp 1.8s ease-in-out forwards; /* Animation */
+.intro h1 {
+    font-size: 36px; /* Large heading */
+    color: #1E90FF; /* Silver blue for the heading */
+    margin-bottom: 10px; /* Space below heading */
 }
 
-/* Call to Action Button */
-.cta-button {
-    padding: 12px 24px; /* Adjust padding for a more modern look */
-    background-color: #1E90FF; /* Silver blue for button */
-    color: #fff; /* White text for button */
-    font-size: 18px;
-    border: none; /* No border */
-    border-radius: 25px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transition for hover effects */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-top: 20px; /* Space above the button */
+.intro p {
+    font-size: 18px; /* Intro paragraph font size */
+    color: #666; /* Grey color for intro text */
 }
 
-.cta-button:hover {
-    background-color: #00BFFF; /* Lighter blue for button hover */
-    transform: scale(1.05); /* Button hover effect */
-}
-
-/* Featured Projects Section */
-.featured-projects {
+/* Projects Section */
+.projects {
     margin: 50px auto; /* Centering the section */
     max-width: 800px; /* Maximum width */
-    text-align: center; /* Center text */
 }
 
-.featured-projects h2 {
+.projects h2 {
     font-size: 32px; /* Heading font size */
     color: #1E90FF; /* Silver blue for heading */
     margin-bottom: 30px; /* Space below the heading */
@@ -112,6 +92,7 @@ nav ul li a:hover {
     display: flex; /* Use flexbox for grid */
     gap: 20px; /* Space between cards */
     justify-content: center; /* Center items */
+    flex-wrap: wrap; /* Wrap items if needed */
 }
 
 .project-card {
@@ -137,6 +118,119 @@ nav ul li a:hover {
     transform: translateY(-5px); /* Lift effect on hover */
 }
 
+/* Skills Section */
+.skills {
+    margin: 50px auto; /* Center the section */
+    max-width: 800px; /* Maximum width */
+}
+
+.skills h2 {
+    font-size: 32px; /* Heading font size */
+    color: #1E90FF; /* Silver blue for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.skills ul {
+    list-style-type: none; /* No bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.skills li {
+    background: #ffffff; /* White background for skill items */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for skill items */
+    margin-bottom: 10px; /* Space between items */
+}
+
+/* Education Section */
+.education {
+    margin: 50px auto; /* Center the section */
+    max-width: 800px; /* Maximum width */
+}
+
+.education h2 {
+    font-size: 32px; /* Heading font size */
+    color: #1E90FF; /* Silver blue for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.education-item {
+    margin-bottom: 15px; /* Space below education items */
+}
+
+.education-item h3 {
+    color: #A8C3C0; /* Silver blue for education title */
+    margin: 0; /* Remove margin */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 50px 20px; /* Padding around the contact section */
+    margin: 50px auto; /* Center the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 600px; /* Maximum width for the form */
+    text-align: center; /* Center text */
+}
+
+/* Contact Heading */
+.contact h2 {
+    font-size: 32px; /* Heading font size */
+    color: #1E90FF; /* Silver blue for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+/* Contact Form Styles */
+.contact form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Column layout */
+    gap: 15px; /* Space between form elements */
+}
+
+/* Input Fields */
+.contact input,
+.contact textarea {
+    padding: 12px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width */
+    transition: border-color 0.3s ease-in-out; /* Transition for focus effect */
+}
+
+/* Input Focus Effect */
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #1E90FF; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit Button */
+.contact .submit-button {
+    background-color: #1E90FF; /* Silver blue for button */
+    color: #fff; /* White text for button */
+    padding: 12px 24px; /* Adjust padding */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact .submit-button:hover {
+    background-color: #00BFFF; /* Lighter blue for button hover */
+    transform: scale(1.05); /* Button hover effect */
+}
+
+/* Response Message */
+.contact .response-message {
+    margin-top: 20px; /* Space above message */
+    font-size: 16px; /* Font size for messages */
+    color: #333; /* Dark text color */
+}
+
 /* Animations */
 @keyframes fadeIn {
     0% {
@@ -155,5 +249,41 @@ nav ul li a:hover {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact {
+        padding: 30px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .contact h2 {
+        font-size: 28px; /* Adjust heading size */
+    }
+
+    .contact input,
+    .contact textarea {
+        font-size: 14px; /* Adjust input font size */
+    }
+
+    .contact .submit-button {
+        padding: 10px 20px; /* Adjust button padding */
+    }
+
+    /* Adjust project card sizes for smaller screens */
+    .project-grid {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center items */
+    }
+
+    .project-card {
+        max-width: 100%; /* Full width on mobile */
+    }
+
+    /* Adjust skills and education sections */
+    .skills, .education {
+        margin: 30px auto; /* Adjust margin for smaller screens */
+        padding: 20px; /* Add some padding */
     }
 }
