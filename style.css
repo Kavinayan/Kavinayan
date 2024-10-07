@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -9,52 +9,31 @@ body {
 }
 
 a {
-    color: #bb86fc;
+    color: #1E90FF; /* Dark blue */
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #ff79c6;
+    color: #00BFFF; /* Lighter blue for hover */
 }
 
 /* Navigation */
 nav {
-    background-color: #1f1f1f;
+    background-color: #1f1f1f; /* Dark background */
     padding: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Align items to the start */
     align-items: center;
+    position: relative; /* Set position to relative for absolute children */
     transition: background-color 0.5s ease-in-out;
-}
-
-nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #bb86fc;
-    transition: color 0.3s ease-in-out;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #e0e0e0;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
 }
 
 /* Logo in top-left corner */
 .top-left-logo {
     width: 50px; /* Adjust the size as necessary */
     height: auto;
-    position: absolute; /* Make the logo position absolute */
+    position: absolute; /* Position the logo absolutely */
     top: 15px; /* Adjust for proper positioning */
     left: 20px; /* Position it in the left corner */
     transition: transform 0.3s ease-in-out;
@@ -64,14 +43,20 @@ nav ul li a {
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
-/* Navigation */
-nav {
-    background-color: #1f1f1f;
-    padding: 15px;
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.5s ease-in-out;
+    margin-left: 80px; /* Adjust left margin for nav items to accommodate the logo */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #e0e0e0; /* Light color for text */
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
 }
 
 /* Hero Section */
@@ -83,7 +68,7 @@ nav {
 
 .hero h1 {
     font-size: 56px;
-    color: #bb86fc;
+    color: #1E90FF; /* Dark blue */
     animation: fadeInDown 1s ease-in-out forwards;
 }
 
@@ -96,8 +81,8 @@ nav {
 
 .cta-button {
     padding: 10px 20px;
-    background-color: #bb86fc;
-    color: #121212;
+    background-color: #1E90FF; /* Dark blue */
+    color: #121212; /* Dark text */
     font-size: 18px;
     border: none;
     cursor: pointer;
@@ -106,15 +91,15 @@ nav {
 }
 
 .cta-button:hover {
-    background-color: #ff79c6;
+    background-color: #00BFFF; /* Lighter blue for hover */
     transform: scale(1.05);
 }
 
 /* About Section */
 .about, .projects {
     padding: 50px;
-    background-color: #1f1f1f;
-    color: #e0e0e0;
+    background-color: #1f1f1f; /* Dark background */
+    color: #e0e0e0; /* Light text */
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
@@ -130,7 +115,7 @@ nav {
 }
 
 .about-text h2 {
-    color: #bb86fc;
+    color: #1E90FF; /* Dark blue */
     font-size: 36px;
 }
 
@@ -147,18 +132,18 @@ nav {
 .about-image img {
     width: 300px;
     border-radius: 50%;
-    border: 5px solid #bb86fc;
+    border: 5px solid #1E90FF; /* Dark blue */
 }
 
 /* Skills Section */
 .skills {
     padding: 50px;
-    background-color: #1f1f1f;
+    background-color: #1f1f1f; /* Dark background */
 }
 
 .skills h2 {
     font-size: 36px;
-    color: #bb86fc;
+    color: #1E90FF; /* Dark blue */
     text-align: center;
     margin-bottom: 40px;
 }
@@ -178,7 +163,7 @@ nav {
 }
 
 .bar {
-    background-color: #292929;
+    background-color: #292929; /* Dark grey */
     border-radius: 10px;
     overflow: hidden;
     margin-top: 10px;
@@ -186,7 +171,7 @@ nav {
 
 .progress {
     height: 20px;
-    background-color: #bb86fc;
+    background-color: #1E90FF; /* Dark blue */
     transition: width 0.5s ease;
 }
 
@@ -200,7 +185,7 @@ nav {
 }
 
 .project-card {
-    background-color: #292929;
+    background-color: #292929; /* Dark grey */
     padding: 20px;
     border-radius: 8px;
     width: 100%;
@@ -209,13 +194,13 @@ nav {
 }
 
 .project-card h3 {
-    color: #bb86fc;
+    color: #1E90FF; /* Dark blue */
     opacity: 0;
     animation: fadeInUp 1.2s ease-in-out forwards;
 }
 
 .project-card p {
-    color: #e0e0e0;
+    color: #e0e0e0; /* Light text */
     opacity: 0;
     animation: fadeInUp 1.5s ease-in-out forwards;
 }
