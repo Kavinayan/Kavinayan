@@ -49,7 +49,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #1E90FF; /* Dark blue for hover */
+    color: #A8C3C0; /* Silver blue for hover */
 }
 
 /* Hero Section */
@@ -62,7 +62,7 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-    color: #bb86fc; /* Hero heading color */
+    color: #A8C3C0; /* Silver blue for hero heading */
     font-size: 48px; /* Hero heading font size */
     margin-bottom: 20px;
     opacity: 0; /* Fade-in effect */
@@ -77,8 +77,8 @@ nav ul li a:hover {
 
 .cta-button {
     padding: 10px 20px;
-    background-color: #bb86fc; /* Button color */
-    color: #121212; /* Button text color */
+    background-color: #A8C3C0; /* Silver blue for button */
+    color: #121212; /* Dark text for button */
     font-size: 18px;
     border: none;
     cursor: pointer;
@@ -87,7 +87,7 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #ff79c6; /* Button hover color */
+    background-color: #1E1E1E; /* Dark color for button hover */
     transform: scale(1.05); /* Button hover effect */
 }
 
