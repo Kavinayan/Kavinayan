@@ -5,34 +5,25 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-}
-
-a {
-    color: #1E90FF; /* Dark blue */
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-    color: #00BFFF; /* Lighter blue for hover */
+    display: flex; /* Use flexbox for layout */
 }
 
 /* Navigation */
 nav {
-    background-color: #1f1f1f; /* Dark background */
+    background-color: #1f1f1f; /* Dark background for navigation */
     padding: 15px;
     display: flex;
     justify-content: space-between; /* Space between nav items and logo */
-    align-items: center;
+    align-items: center; /* Center items vertically */
     position: relative; /* Set position to relative for absolute children */
-    transition: background-color 0.5s ease-in-out;
+    height: 60px; /* Set height for nav */
 }
 
 /* Logo in top-right corner */
 .top-right-logo {
     width: 50px; /* Adjust the size as necessary */
     height: auto;
+    margin-left: auto; /* Push the logo to the far right */
     transition: transform 0.3s ease-in-out;
 }
 
@@ -41,9 +32,10 @@ nav {
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    margin-left: 20px; /* Margin for nav items */
+    list-style: none; /* No bullets */
+    display: flex; /* Display links in a row */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
 nav ul li {
@@ -56,24 +48,25 @@ nav ul li a {
     transition: color 0.3s ease-in-out;
 }
 
+nav ul li a:hover {
+    color: #1E90FF; /* Dark blue for hover */
+}
+
 /* Hero Section */
 .hero {
-    background: url('background.jpg') no-repeat center center/cover;
-    padding: 150px 20px; /* Adjusted padding */
+    margin-left: 20px; /* Adjust margin for the hero section */
+    padding: 150px 20px; /* Add padding */
     text-align: center;
 }
 
 .hero h1 {
     font-size: 56px;
     color: #1E90FF; /* Dark blue */
-    animation: fadeInDown 1s ease-in-out forwards;
 }
 
 .hero p {
     font-size: 24px;
     margin-bottom: 20px;
-    opacity: 0;
-    animation: fadeInUp 1.5s ease-in-out forwards;
 }
 
 .cta-button {
@@ -91,6 +84,7 @@ nav ul li a {
     background-color: #00BFFF; /* Lighter blue for hover */
     transform: scale(1.05);
 }
+
 
 /* About Section */
 .about, .projects {
