@@ -52,25 +52,22 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-color: #292929;
-    padding: 100px 0;
+    background: url('background.jpg') no-repeat center center/cover;
+    padding: 150px 0;
     text-align: center;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .hero h1 {
+    font-size: 56px;
     color: #bb86fc;
-    font-size: 48px;
-    margin-bottom: 20px;
-    opacity: 0;
-    animation: fadeInUp 1.5s ease-in-out forwards;
+    animation: fadeInDown 1s ease-in-out forwards;
 }
 
 .hero p {
     font-size: 24px;
+    margin-bottom: 20px;
     opacity: 0;
-    animation: fadeInUp 1.8s ease-in-out forwards;
+    animation: fadeInUp 1.5s ease-in-out forwards;
 }
 
 .cta-button {
@@ -97,11 +94,76 @@ nav ul li a {
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
-.about h1, .projects h1 {
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    color: #bb86fc;
+    font-size: 36px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid #bb86fc;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px;
+    background-color: #1f1f1f;
+}
+
+.skills h2 {
     font-size: 36px;
     color: #bb86fc;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skill-bars {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-bar {
+    width: 30%;
+    margin: 20px 0;
+}
+
+.skill-bar span {
+    font-size: 18px;
+}
+
+.bar {
+    background-color: #292929;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 20px;
+    background-color: #bb86fc;
+    transition: width 0.5s ease;
 }
 
 /* Project Cards */
@@ -153,6 +215,17 @@ nav ul li a {
     0% {
         opacity: 0;
         transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
     }
     100% {
         opacity: 1;
