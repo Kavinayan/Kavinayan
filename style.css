@@ -50,6 +50,20 @@ nav ul li a {
     transition: color 0.3s ease-in-out;
 }
 
+/* Logo in top-right corner */
+.top-right-logo {
+    width: 50px; /* Adjust the size as necessary */
+    height: auto;
+    position: absolute;
+    top: 15px; /* Adjust for proper positioning */
+    right: 20px; /* Adjust for proper positioning */
+    transition: transform 0.3s ease-in-out;
+}
+
+.top-right-logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
 /* Hero Section */
 .hero {
     background: url('background.jpg') no-repeat center center/cover;
