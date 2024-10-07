@@ -96,3 +96,149 @@ nav ul li a:hover {
     background-color: #00BFFF; /* Lighter blue for hover */
     transform: scale(1.05);
 }
+/* About Section */
+.about, .projects {
+    padding: 50px;
+    background-color: #1f1f1f; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    color: #1E90FF; /* Dark blue */
+    font-size: 36px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid #1E90FF; /* Dark blue */
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px;
+    background-color: #1f1f1f; /* Dark background */
+}
+
+.skills h2 {
+    font-size: 36px;
+    color: #1E90FF; /* Dark blue */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skill-bars {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-bar {
+    width: 30%;
+    margin: 20px 0;
+}
+
+.skill-bar span {
+    font-size: 18px;
+}
+
+.bar {
+    background-color: #292929; /* Dark grey */
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 20px;
+    background-color: #1E90FF; /* Dark blue */
+    transition: width 0.5s ease;
+}
+
+/* Project Cards */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.project-card {
+    background-color: #292929; /* Dark grey */
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card h3 {
+    color: #1E90FF; /* Dark blue */
+    opacity: 0;
+    animation: fadeInUp 1.2s ease-in-out forwards;
+}
+
+.project-card p {
+    color: #e0e0e0; /* Light text */
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
