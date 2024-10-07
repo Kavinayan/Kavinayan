@@ -23,34 +23,31 @@ nav {
     background-color: #1f1f1f; /* Dark background */
     padding: 15px;
     display: flex;
-    justify-content: flex-start; /* Align items to the start */
+    justify-content: space-between; /* Space between nav items and logo */
     align-items: center;
     position: relative; /* Set position to relative for absolute children */
     transition: background-color 0.5s ease-in-out;
 }
 
-/* Logo in top-left corner */
-.top-left-logo {
+/* Logo in top-right corner */
+.top-right-logo {
     width: 50px; /* Adjust the size as necessary */
     height: auto;
-    position: absolute; /* Position the logo absolutely */
-    top: 15px; /* Adjust for proper positioning */
-    left: 20px; /* Position it in the left corner */
     transition: transform 0.3s ease-in-out;
 }
 
-.top-left-logo:hover {
+.top-right-logo:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    margin-left: 80px; /* Adjust left margin for nav items to accommodate the logo */
+    margin-left: 20px; /* Margin for nav items */
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 20px; /* Space between nav items */
 }
 
 nav ul li a {
@@ -62,7 +59,7 @@ nav ul li a {
 /* Hero Section */
 .hero {
     background: url('background.jpg') no-repeat center center/cover;
-    padding: 150px 0;
+    padding: 150px 20px; /* Adjusted padding */
     text-align: center;
 }
 
