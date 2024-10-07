@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -9,74 +9,81 @@ body {
 }
 
 a {
-    color: #bb86fc;
+    color: #bb86fc; /* Link color */
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #ff79c6;
+    color: #ff79c6; /* Hover color */
 }
 
 /* Navigation */
 nav {
-    background-color: #1f1f1f;
+    background-color: #1f1f1f; /* Dark background for navigation */
     padding: 15px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.5s ease-in-out;
+    justify-content: center; /* Center nav items */
+    align-items: center; /* Center items vertically */
+    position: relative; /* Position relative to allow child positioning */
 }
 
-nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #bb86fc;
-    transition: color 0.3s ease-in-out;
+/* Logo in Navigation */
+.nav-logo {
+    width: 50px; /* Adjust the size as necessary */
+    height: auto;
+    margin-right: 20px; /* Space between logo and nav items */
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
+    list-style: none; /* No bullets */
+    display: flex; /* Display links in a row */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 20px; /* Space between nav items */
 }
 
 nav ul li a {
-    color: #e0e0e0;
+    color: #e0e0e0; /* Light color for text */
     font-size: 18px;
     transition: color 0.3s ease-in-out;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #292929;
-    padding: 100px 0;
+    background-color: #292929; /* Hero section background */
+    padding: 100px 0; /* Padding for the hero section */
     text-align: center;
-    opacity: 0;
+    opacity: 0; /* Fade-in effect */
     animation: fadeIn 1s ease-in-out forwards;
 }
 
 .hero h1 {
-    color: #bb86fc;
-    font-size: 48px;
+    color: #bb86fc; /* Hero heading color */
+    font-size: 48px; /* Hero heading font size */
     margin-bottom: 20px;
-    opacity: 0;
+    opacity: 0; /* Fade-in effect */
     animation: fadeInUp 1.5s ease-in-out forwards;
 }
 
 .hero p {
-    font-size: 24px;
-    opacity: 0;
+    font-size: 24px; /* Hero paragraph font size */
+    opacity: 0; /* Fade-in effect */
     animation: fadeInUp 1.8s ease-in-out forwards;
 }
 
 .cta-button {
     padding: 10px 20px;
-    background-color: #bb86fc;
-    color: #121212;
+    background-color: #bb86fc; /* Button color */
+    color: #121212; /* Button text color */
     font-size: 18px;
     border: none;
     cursor: pointer;
@@ -85,58 +92,8 @@ nav ul li a {
 }
 
 .cta-button:hover {
-    background-color: #ff79c6;
-    transform: scale(1.05);
-}
-
-/* About Section */
-.about, .projects {
-    padding: 50px;
-    background-color: #1f1f1f;
-    color: #e0e0e0;
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-}
-
-.about h1, .projects h1 {
-    font-size: 36px;
-    color: #bb86fc;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
-}
-
-/* Project Cards */
-.project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
-}
-
-.project-card {
-    background-color: #292929;
-    padding: 20px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 300px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.project-card h3 {
-    color: #bb86fc;
-    opacity: 0;
-    animation: fadeInUp 1.2s ease-in-out forwards;
-}
-
-.project-card p {
-    color: #e0e0e0;
-    opacity: 0;
-    animation: fadeInUp 1.5s ease-in-out forwards;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #ff79c6; /* Button hover color */
+    transform: scale(1.05); /* Button hover effect */
 }
 
 /* Animations */
